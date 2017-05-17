@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        body {
+            font-family: Helvetica, Arial;
+            display: inline-block;
+            background-color: #EFECCA;
+        }
+
+        h1 {
+            color: #C03000;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4BB5C1;
+            text-align: center;
+        }
+
+        a {
+            color: #96CA2D;
+        }
+
+        td {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        }
+
+        input[type="text"] {
+
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        input[type="number"] {
+
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        input[type="submit"] {
+
+            border-radius: 5px;
+            background-color: red;
+            width: 200px;
+        }
+    </style>
+    <title>Gestion des clients</title>
+</head>
+<div>
+
+    <body>
+        <h1>Gestion des clients</h1>
+        <h2>Création d'un client</h2>
+        <a href="./ListerClient.html">
+            << Retour à la liste</a><br /><br />
+                <form method="POST" action="./script/ajouter_client.php">
+                    <table width=50%>
+                        <tr>
+                            <td>Nom</td>
+                            <td><input type="text" name="nom" placeholder="Nom" /></td>
+                        </tr>
+                        <tr>
+                            <td>Prénom</td>
+                            <td><input type="text" name="prenom" placeholder="Prénom" /></td>
+                        </tr>
+                        <tr>
+                            <td>Ville</td>
+                            <td><input type="text" name="ville" placeholder="Ville" /></td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td><input type="number" name="age" placeholder="Age" /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Ajouter" /></td>
+                        </tr>
+                    </table>
+                </form>
+</div>
+</body>
+
+</html>

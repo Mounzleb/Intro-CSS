@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /*ici c'est la declaration de la div quand la souris passe dessus*/
+#monDiv:hover {
+    width: 300px;
+    background-color:green;
+    /*on declare la rotation de notre carré*/
+    /*transform: rotate(360deg);*/
+}
+    /*ici c'est la declaration de la div sans passer la souris dessus*/
+#monDiv {
+    position: absolute;
+    left: 100px; 
+    top: 100px; 
+    width: 100px;
+    height: 100px;
+    background: red;
+    /*temps de la transition*/
+    /*transition-duration:3s;*/
+}
+
+
+/* Syntaxe standard */
+@keyframes monMouvement {
+  from {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(100deg);
+    }
+
+    60% {
+        transform: translateX(150px) rotate(36deg);
+    }
+
+    80% {
+        transform: rotate(360deg);
+    }
+
+    to {
+        position: absolute;
+    left: 100px; 
+    top: 100px; 
+    width: 100px;
+    height: 100px;
+    background: red;
+    }}
+
+/*pour que l'animation reste à l'infinie quandje laisse ma souris dessus*/
+#monDiv:hover
+{
+    animation: monMouvement 2s linear alternate infinite; /* Tous les autres navigateurs */
+}
+    
+</style>
+</head>
+<body>
+
+<div id="monDiv"></div>
+
+</body>
+</html>

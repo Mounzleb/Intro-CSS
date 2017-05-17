@@ -1,0 +1,60 @@
+/*ici on donne l'id de la div par # et le nom de la div sur laquelle on veux appliquée notre selection*/
+#list_section
+{
+    display: inline-block;
+    background-color: #000099;
+}
+
+h1
+{
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+body
+{
+    font-family: Helvetica, Arial;
+        display: inline-block;
+    background-color: #000099;
+}
+
+ul
+{
+    padding: 10px;
+}
+
+li
+{
+    margin: 10px;
+    display: block;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+li, h1
+{
+    margin: 10px;
+    /*autour du texte espacement de 10px*/
+    padding: 10px
+}
+
+form
+{
+    padding: 10px;
+}
+
+input[type="submit"]
+{
+    border-radius: 8px;
+        padding: 5px
+
+}
+
+input[type="text"]
+{
+    border-radius: 3px;
+        padding: 5px
+
+}

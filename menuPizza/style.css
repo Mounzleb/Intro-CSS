@@ -1,0 +1,55 @@
+
+h1
+{
+    color: #C03000;
+    margin: 10px;
+    text-align: center;
+}
+
+h2
+{
+    color: #4BB5C1;
+    margin: 10px;
+    text-align: center;
+}
+
+body
+{
+
+    font-family: Helvetica, Arial;
+        display: inline-block;
+    background-color: #EFECCA;
+}
+
+ul
+{
+    padding: 10px;
+}
+
+li
+{
+    color: white;
+    margin: 1px;
+    display: inline-block;
+    text-align: center;
+    background-color: red;
+    border : 2px solid #660000;
+    width: 100px;
+}
+li a {
+    color: white;
+}
+
+li:hover
+{
+     text-decoration: underline;
+    background-color: green;
+}
+
+
+li, h1
+{
+    margin: 10px;
+    /*autour du texte espacement de 10px*/
+    padding: 10px
+}
